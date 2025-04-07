@@ -6,13 +6,12 @@ using namespace std;
 
 int main()
 {
-    long long n, s = 0;
+    long long int n, a, sum = 0;
     cin >> n;
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n - 1; i++)
     {
-        int a;
         cin >> a;
-        s += a;
+        sum += a;
     }
-    cout << n * (n + 1) / 2 - s;
+    cout << (n * (n + 1) / 2) - sum;
 }
